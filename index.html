@@ -6,7 +6,6 @@
   <title>Jacob Okoth | Developer & AI Innovator</title>
 
   <style>
-    /* ===== Global Styles ===== */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
     body {
@@ -33,7 +32,6 @@
       margin-bottom: 0.4rem;
     }
 
-    /* Typing Effect */
     .typing {
       color: #00b4db;
       font-size: 1.2rem;
@@ -44,147 +42,30 @@
       animation: typing 3s steps(30, end), blink 0.8s infinite;
     }
 
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
+    @keyframes typing { from { width: 0 } to { width: 100% } }
+    @keyframes blink { 50% { border-color: transparent } }
 
-    @keyframes blink {
-      50% { border-color: transparent }
-    }
+    p { color: #bbb; font-size: 1.05rem; margin-top: 1rem; }
+    .contact a { color: #00b4db; text-decoration: none; font-weight: 600; }
 
-    p {
-      color: #bbb;
-      font-size: 1.05rem;
-      margin-top: 1rem;
-    }
+    .skills { background: #111827; border-radius: 12px; padding: 1.5rem; margin: 3rem 0; box-shadow: 0 0 25px rgba(0, 180, 219, 0.15); opacity: 0; transform: translateY(40px); transition: all 1s ease; }
+    .skills.visible { opacity: 1; transform: translateY(0); }
+    .skills h2 { color: #00b4db; font-size: 1.6rem; border-bottom: 2px solid #00b4db; display: inline-block; padding-bottom: 5px; margin-bottom: 1.2rem; }
+    ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    li { background: #1e293b; padding: 0.7rem 1.2rem; border-radius: 8px; color: #d1d5db; font-size: 0.95rem; transition: transform 0.3s ease, background 0.3s ease; }
+    li:hover { background: #00b4db; color: #fff; transform: translateY(-3px); }
 
-    .contact a {
-      color: #00b4db;
-      text-decoration: none;
-      font-weight: 600;
-    }
+    .projects { margin-top: 3rem; }
+    .projects h2 { color: #00b4db; font-size: 1.7rem; margin-bottom: 1.5rem; }
+    .project-card { background: #111827; border-radius: 14px; padding: 1.8rem; text-align: left; box-shadow: 0 4px 20px rgba(0, 180, 219, 0.1); margin-bottom: 1.5rem; transition: transform 0.4s ease, box-shadow 0.4s ease; opacity: 0; transform: translateY(50px); }
+    .project-card.visible { opacity: 1; transform: translateY(0); }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 6px 30px rgba(0, 180, 219, 0.25); }
+    .project-title { color: #00b4db; font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .project-desc { color: #aaa; font-size: 1rem; margin-bottom: 1rem; line-height: 1.6; }
+    .project-links a { color: #00b4db; background: #1e293b; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; margin-right: 0.8rem; transition: background 0.3s ease, color 0.3s ease; }
+    .project-links a:hover { background: #00b4db; color: #fff; }
 
-    /* ===== Skills ===== */
-    .skills {
-      background: #111827;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin: 3rem 0;
-      box-shadow: 0 0 25px rgba(0, 180, 219, 0.15);
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 1s ease;
-    }
-
-    .skills.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .skills h2 {
-      color: #00b4db;
-      font-size: 1.6rem;
-      border-bottom: 2px solid #00b4db;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 1.2rem;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    li {
-      background: #1e293b;
-      padding: 0.7rem 1.2rem;
-      border-radius: 8px;
-      color: #d1d5db;
-      font-size: 0.95rem;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-
-    li:hover {
-      background: #00b4db;
-      color: #fff;
-      transform: translateY(-3px);
-    }
-
-    /* ===== Project Cards ===== */
-    .projects {
-      margin-top: 3rem;
-    }
-
-    .projects h2 {
-      color: #00b4db;
-      font-size: 1.7rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .project-card {
-      background: #111827;
-      border-radius: 14px;
-      padding: 1.8rem;
-      text-align: left;
-      box-shadow: 0 4px 20px rgba(0, 180, 219, 0.1);
-      margin-bottom: 1.5rem;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-      opacity: 0;
-      transform: translateY(50px);
-    }
-
-    .project-card.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 30px rgba(0, 180, 219, 0.25);
-    }
-
-    .project-title {
-      color: #00b4db;
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .project-desc {
-      color: #aaa;
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-
-    .project-links a {
-      color: #00b4db;
-      background: #1e293b;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      margin-right: 0.8rem;
-      transition: background 0.3s ease, color 0.3s ease;
-    }
-
-    .project-links a:hover {
-      background: #00b4db;
-      color: #fff;
-    }
-
-    /* ===== Footer ===== */
-    footer {
-      text-align: center;
-      color: #777;
-      font-size: 0.9rem;
-      margin-top: 3rem;
-      padding-bottom: 1rem;
-    }
+    footer { text-align: center; color: #777; font-size: 0.9rem; margin-top: 3rem; padding-bottom: 1rem; }
   </style>
 </head>
 
@@ -240,6 +121,17 @@
       </div>
 
       <div class="project-card fade">
+        <div class="project-title">🩺 AI Health Symptom Checker</div>
+        <div class="project-desc">
+          Predict possible diseases by selecting symptoms. Built with AI and machine learning for educational purposes.
+        </div>
+        <div class="project-links">
+          <a href="https://huggingface.co/spaces/jokkol506/ai-health-symptom-checker" target="_blank">Live Demo</a>
+          <a href="https://github.com/jokkolr/AI-health-symptom-checker.git" target="_blank">GitHub Code</a>
+        </div>
+      </div>
+
+      <div class="project-card fade">
         <div class="project-title">🔒 Habit Breaker App</div>
         <div class="project-desc">
           Track and replace bad habits using progress analytics and behavioral motivation.
@@ -265,7 +157,6 @@
     </footer>
   </div>
 
-  <!-- ===== Scroll Animations ===== -->
   <script>
     const faders = document.querySelectorAll('.fade, .project-card, .skills');
     const observer = new IntersectionObserver(entries => {
