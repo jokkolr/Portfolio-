@@ -3,152 +3,228 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Okoth | Full Stack Developer & AI Innovator</title>
+  <title>Jacob Okoth | Developer & AI Innovator</title>
+
   <style>
+    /* ===== Global Styles ===== */
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #e3f2fd, #ffffff);
-      color: #222;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top left, #101820, #000000);
+      color: #f5f5f5;
       margin: 0;
-      padding: 2rem;
+      padding: 0;
     }
 
     .container {
-      max-width: 850px;
-      margin: auto;
-      background: #fff;
-      padding: 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-    }
-
-    .container:hover {
-      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+      max-width: 950px;
+      margin: 4rem auto;
+      padding: 2rem;
+      text-align: center;
     }
 
     h1 {
-      text-align: center;
-      color: #0056b3;
-      font-size: 2.2rem;
-      margin-bottom: 0.3rem;
-    }
-
-    h2 {
-      color: #0056b3;
-      border-bottom: 2px solid #0056b3;
-      display: inline-block;
-      margin-top: 2rem;
+      font-size: 2.6rem;
+      background: linear-gradient(90deg, #00b4db, #0083b0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
     }
 
     p {
-      text-align: center;
-      font-size: 1.05rem;
-    }
-
-    .contact {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      color: #444;
+      color: #bbb;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
     }
 
     .contact a {
-      color: #0056b3;
+      color: #00b4db;
+      text-decoration: none;
       font-weight: 600;
+    }
+
+    .skills {
+      background: #111827;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      box-shadow: 0 0 25px rgba(0, 180, 219, 0.1);
+    }
+
+    .skills h2 {
+      color: #00b4db;
+      font-size: 1.6rem;
+      border-bottom: 2px solid #00b4db;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 1rem;
     }
 
     ul {
       list-style: none;
       padding: 0;
-      line-height: 1.8;
-      font-size: 1.05rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
     }
 
-    li::before {
-      content: "✔️ ";
-      margin-right: 8px;
+    li {
+      background: #1e293b;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      color: #d1d5db;
+      font-size: 0.95rem;
+      transition: transform 0.3s ease, background 0.3s ease;
     }
 
-    a {
-      color: #0066cc;
-      text-decoration: none;
+    li:hover {
+      background: #00b4db;
+      color: #fff;
+      transform: translateY(-3px);
     }
 
-    a:hover {
-      text-decoration: underline;
+    .projects {
+      margin-top: 3rem;
     }
 
-    .project {
-      background: #f8faff;
-      border-left: 4px solid #0066cc;
-      padding: 1.2rem 1.5rem;
-      margin-bottom: 1.3rem;
-      border-radius: 6px;
-      transition: transform 0.2s ease;
+    .projects h2 {
+      color: #00b4db;
+      font-size: 1.7rem;
+      margin-bottom: 1.5rem;
     }
 
-    .project:hover {
+    .project-card {
+      background: #111827;
+      border-radius: 14px;
+      padding: 1.8rem;
+      text-align: left;
+      box-shadow: 0 4px 20px rgba(0, 180, 219, 0.1);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 30px rgba(0, 180, 219, 0.2);
     }
 
-    .project a {
-      font-weight: bold;
+    .project-title {
+      color: #00b4db;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-desc {
+      color: #aaa;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .project-links a {
+      color: #00b4db;
+      background: #1e293b;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-right: 0.8rem;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .project-links a:hover {
+      background: #00b4db;
+      color: #fff;
     }
 
     footer {
       text-align: center;
-      margin-top: 2rem;
-      color: #555;
+      color: #777;
       font-size: 0.9rem;
+      margin-top: 3rem;
+      padding-bottom: 1rem;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <h1>Jacob Okoth</h1>
+    <p>💡 Full Stack Developer | 🎨 Graphics Designer | 🤖 AI Innovator</p>
+
     <p class="contact">
-      🚀 Full Stack Developer | 🎨 Graphics Designer | 🤖 AI Innovator<br />
       📧 <a href="mailto:jokkol506@gmail.com">jokkol506@gmail.com</a>
     </p>
 
-    <p>
-      I’m a passionate developer focused on creating impactful digital experiences and intelligent solutions. 
-      I specialize in crafting modern web apps and AI-driven tools that solve real-world problems efficiently and elegantly.
-    </p>
-
-    <h2>Skills</h2>
-    <ul>
-      <li>🌐 Frontend: HTML, CSS, JavaScript, React.js</li>
-      <li>🛠️ Backend: Node.js, PHP, MySQL</li>
-      <li>🎨 Graphics: Adobe Photoshop, Canva</li>
-      <li>⚡ Typing Speed: 45+ WPM</li>
-      <li>🤖 AI Tools: Resume Builders, Productivity & Habit Apps</li>
-    </ul>
-
-    <h2>Highlighted Projects</h2>
-
-    <div class="project">
-      <p>🌱 <strong>Smart Agriculture System</strong><br />
-      A next-gen solution for precision farming — integrates IoT and data analytics to optimize crop yield and resource management.<br />
-      🔗 <a href="https://jokkolr.github.io/Agricultue/" target="_blank" rel="noopener noreferrer">Visit Project</a></p>
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>Adobe Photoshop</li>
+        <li>Canva</li>
+        <li>AI Tools</li>
+      </ul>
     </div>
 
-    <div class="project">
-      <p>🧠 <strong>AI Resume Builder</strong><br />
-      Generates tailored, professional CVs optimized for recruiter attention using AI.<br />
-      🔗 <a href="https://jokkolr.github.io/AI-resume-builder-/" target="_blank" rel="noopener noreferrer">Visit Project</a></p>
-    </div>
+    <div class="projects">
+      <h2>Highlighted Projects</h2>
 
-    <div class="project">
-      <p>🔒 <strong>Habit Breaker App</strong><br />
-      Empowers users to track and replace unhealthy habits through smart motivation and analytics.<br />
-      🔗 <a href="https://jokkolr.github.io/Habit-breaker/" target="_blank" rel="noopener noreferrer">Visit Project</a></p>
-    </div>
+      <div class="project-card">
+        <div class="project-title">📄 Smart Resume Analyzer</div>
+        <div class="project-desc">
+          An AI-powered app that checks how well your resume matches a job description and provides a match score with feedback.
+        </div>
+        <div class="project-links">
+          <a href="https://huggingface.co/spaces/jokkol506/smart-resume-analyzer" target="_blank">Live Demo</a>
+          <a href="https://github.com/jokkolr/smart-resume-analyzer" target="_blank">GitHub Code</a>
+        </div>
+      </div>
 
-    <div class="project">
-      <p>🧭 <strong>Street Smart App</strong><br />
-      Enhances urban safety and navigation awareness through real-time reporting and alerts.<br />
-      🔗 <a href="https://jokkolr.github.io/Street-smart/" target="_blank" rel="noopener noreferrer">Visit Project</a></p>
+      <div class="project-card">
+        <div class="project-title">🌱 Smart Agriculture System</div>
+        <div class="project-desc">
+          A next-gen precision farming tool integrating IoT and analytics to optimize crop yield and resource management.
+        </div>
+        <div class="project-links">
+          <a href="https://jokkolr.github.io/Agricultue/" target="_blank">Visit Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">🧠 AI Resume Builder</div>
+        <div class="project-desc">
+          Generates tailored, professional CVs optimized for recruiter attention using artificial intelligence.
+        </div>
+        <div class="project-links">
+          <a href="https://jokkolr.github.io/AI-resume-builder-/" target="_blank">Visit Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">🔒 Habit Breaker App</div>
+        <div class="project-desc">
+          Track and replace unhealthy habits through smart analytics and motivational feedback.
+        </div>
+        <div class="project-links">
+          <a href="https://jokkolr.github.io/Habit-breaker/" target="_blank">Visit Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">🧭 Street Smart App</div>
+        <div class="project-desc">
+          Enhances urban safety and navigation awareness with real-time reporting and community alerts.
+        </div>
+        <div class="project-links">
+          <a href="https://jokkolr.github.io/Street-smart/" target="_blank">Visit Project</a>
+        </div>
+      </div>
     </div>
 
     <footer>
