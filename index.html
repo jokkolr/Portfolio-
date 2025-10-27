@@ -3,46 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Okoth | Portfolio</title>
+  <title>Jacob Okoth | Full Stack Developer & AI Innovator</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f4f8;
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
       color: #222;
       margin: 0;
       padding: 2rem;
     }
 
     .container {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
     }
 
-    h1, h2 {
+    .container:hover {
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+    }
+
+    h1 {
       text-align: center;
-      color: #0066cc;
+      color: #0056b3;
+      font-size: 2.2rem;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      color: #0056b3;
+      border-bottom: 2px solid #0056b3;
+      display: inline-block;
+      margin-top: 2rem;
     }
 
     p {
       text-align: center;
+      font-size: 1.05rem;
     }
 
     .contact {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    .contact a {
+      color: #0056b3;
+      font-weight: 600;
     }
 
     ul {
       list-style: none;
       padding: 0;
+      line-height: 1.8;
+      font-size: 1.05rem;
     }
 
-    li {
-      margin: 0.5rem 0;
+    li::before {
+      content: "✔️ ";
+      margin-right: 8px;
     }
 
     a {
@@ -55,15 +79,27 @@
     }
 
     .project {
-      background: #f9f9f9;
+      background: #f8faff;
       border-left: 4px solid #0066cc;
-      padding: 1rem;
-      margin-bottom: 1.2rem;
-      border-radius: 5px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.3rem;
+      border-radius: 6px;
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
     }
 
     .project a {
       font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #555;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -71,8 +107,13 @@
   <div class="container">
     <h1>Jacob Okoth</h1>
     <p class="contact">
-      Full Stack Developer | Graphics Designer | AI Innovator<br />
+      🚀 Full Stack Developer | 🎨 Graphics Designer | 🤖 AI Innovator<br />
       📧 <a href="mailto:jokkol506@gmail.com">jokkol506@gmail.com</a>
+    </p>
+
+    <p>
+      I’m a passionate developer focused on creating impactful digital experiences and intelligent solutions. 
+      I specialize in crafting modern web apps and AI-driven tools that solve real-world problems efficiently and elegantly.
     </p>
 
     <h2>Skills</h2>
@@ -80,36 +121,39 @@
       <li>🌐 Frontend: HTML, CSS, JavaScript, React.js</li>
       <li>🛠️ Backend: Node.js, PHP, MySQL</li>
       <li>🎨 Graphics: Adobe Photoshop, Canva</li>
-      <li>📈 Typing Speed: 45+ WPM</li>
-      <li>🧠 AI Tools: Resume Builders, Habit Apps</li>
+      <li>⚡ Typing Speed: 45+ WPM</li>
+      <li>🤖 AI Tools: Resume Builders, Productivity & Habit Apps</li>
     </ul>
 
-    <h2>Projects</h2>
+    <h2>Highlighted Projects</h2>
 
     <div class="project">
-      <p>🚁 <strong>Agri-Drone Monitoring System</strong><br />
-      Smart crop health monitoring using drone imagery and AI.<br />
-      🔗 <a href="https://jokkolr.github.io/Agri-drone/" target="_blank">Visit Project</a></p>
+      <p>🌱 <strong>Smart Agriculture System</strong><br />
+      A next-gen solution for precision farming — integrates IoT and data analytics to optimize crop yield and resource management.<br />
+      🔗 <a href="https://jokkolr.github.io/Agricultue/" target="_blank">Visit Project</a></p>
     </div>
 
     <div class="project">
       <p>🧠 <strong>AI Resume Builder</strong><br />
-      Generates professional CVs tailored for job success.<br />
+      Generates tailored, professional CVs optimized for recruiter attention using AI.<br />
       🔗 <a href="https://jokkolr.github.io/AI-resume-builder-/" target="_blank">Visit Project</a></p>
     </div>
 
     <div class="project">
       <p>🔒 <strong>Habit Breaker App</strong><br />
-      Helps users track and overcome personal habits.<br />
+      Empowers users to track and replace unhealthy habits through smart motivation and analytics.<br />
       🔗 <a href="https://jokkolr.github.io/Habit-breaker/" target="_blank">Visit Project</a></p>
     </div>
 
     <div class="project">
       <p>🧭 <strong>Street Smart App</strong><br />
-      Enhances safety and awareness for urban navigation.<br />
+      Enhances urban safety and navigation awareness through real-time reporting and alerts.<br />
       🔗 <a href="https://jokkolr.github.io/Street-smart/" target="_blank">Visit Project</a></p>
     </div>
 
+    <footer>
+      © 2025 Jacob Okoth — Building innovation through technology and creativity.
+    </footer>
   </div>
 </body>
-  </html>
+</html>
